@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synttärivisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="intro-screen">
+            <h1>Synttärivisa</h1>
+            <p>Vastaamalla jokaiseen kysymykseen oikein saat mahdollisuuden bonuskysymykseen, johon vastaamalla oikein voitat arvokkaan palkinnon koko perheelle!</p>
+            <button id="start-btn">ALOITA</button>
+        </div>
+        <div id="game-screen" style="display: none;">
+            <div id="question-display"></div>
+            <div id="options-display"></div>
+            <button id="submit-btn">Vastaa</button>
+            <div id="feedback"></div>
+            <div id="score">Pisteet: 0</div>
+            <canvas id="fireworks-canvas" style="display: none;"></canvas>
+        </div>
+
+        <!-- Prize Dialog -->
+        <div id="prize-dialog" class="prize-dialog-overlay" style="display: none;">
+            <div class="prize-dialog-content">
+                <span class="prize-dialog-close">&times;</span>
+                <h2 class="prize-dialog-title">Onneksi olkoon!</h2>
+                <p class="prize-dialog-text">Voitit juuri 6 (kuusi) omavalintaista pizzaa Viikinmäen perheravintolasta.<br/><br/>
+                    Ota yhteyttä omistajaan Sanna E. varataksesi pöydän. <br/><br/>Riittää että tuot perheesi, hyvän mielen ja ison ruokahalun, koska pizzaahan meillä riittää!<br/><br/> Parkkipaikkoja alueella hyvin rajoitetusti.</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
