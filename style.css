@@ -90,8 +90,8 @@ th {
 }
 
 .incorrect {
-    color: #ff0000 !important;
     font-weight: bold;
+    opacity: 0.3;
 }
 
 @keyframes bonus-glow {
@@ -173,4 +173,10 @@ th {
     0% { transform: scale(1); box-shadow: 0 0 0 rgba(255, 215, 0, 0.4); }
     70% { transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); }
     100% { transform: scale(1); box-shadow: 0 0 0 rgba(255, 215, 0, 0.4); }
+}
+
+.selected-answer-feedback {
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
 }

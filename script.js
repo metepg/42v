@@ -232,6 +232,9 @@ btn.addEventListener('click', () => {
         } else {
             label.classList.add('incorrect');
         }
+        if (option === selected) { // Add this check
+            label.classList.add('selected-answer-feedback');
+        }
     });
 
     if (parseInt(selected.value) === questions[currentQIndex].correct) {
